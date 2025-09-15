@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react'
 
 import './Home.css'
+import { Slider } from '../../organisms/Slider/Slider'
+
+
 const Home = () => {
   const [products, setProducts] = useState([])
 
@@ -11,7 +14,10 @@ const Home = () => {
   }, [])
 
   return (
-    <div>Home</div>
+    <div>
+
+      < Slider products={products}/>
+    </div>
   )
 }
 
