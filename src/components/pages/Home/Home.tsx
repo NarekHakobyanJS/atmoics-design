@@ -15,7 +15,6 @@ const Home = () => {
 
   return (
     <div>
-
       < Slider products={products}/>
     </div>
   )

@@ -1,0 +1,15 @@
+.go-cart-btn {
+    width: 100px;
+    height: 45px;
+    border-radius: 26px;
+    background-color: black;
+    color : white;
+}
+
+.go-cart-btn-one{
+    width: 50px;
+    height: 5px;
+    border-radius: 26px;
+    background-color: blue;
+    color : white;
+}

@@ -1,15 +1,25 @@
-.go-cart-btn {
-    width: 100px;
-    height: 45px;
-    border-radius: 26px;
-    background-color: black;
-    color : white;
+nav {
+    width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap : 30px;
 }
 
-.go-cart-btn-one{
-    width: 50px;
-    height: 5px;
-    border-radius: 26px;
-    background-color: blue;
-    color : white;
+.nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap : 30px;
+}
+
+
+.nav-content > li {
+    list-style: none;
+}
+.nav-content > li > a {
+    text-decoration: none;
+    font-size: 19px;
+    color : black;
+    cursor: pointer;
 }

@@ -6,7 +6,7 @@ import Button from '../../atoms/Button/Button'
 const Nav = () => {
   return (
     <nav>
-      <ul>
+      <ul className='nav-content'>
         <li>
           <NavLink to='/'>Home</NavLink>
         </li>

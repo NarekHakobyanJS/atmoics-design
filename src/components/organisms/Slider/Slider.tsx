@@ -18,6 +18,7 @@ type SilderPropsType = {
 export const Slider = ({products} : SilderPropsType) => {
     return (
       <Swiper
+        className='a'
         // install Swiper modules
         modules={[Navigation, Pagination, Scrollbar, Autoplay, A11y]}
         spaceBetween={50}

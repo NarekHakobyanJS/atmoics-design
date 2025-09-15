@@ -1,3 +1,23 @@
-.swiper-button-next, .swiper-button-prev {
-    background-color: black;
+/* Slider.css */
+.swiper-button-prev,
+.swiper-button-next {
+  color: #fff; /* icon-ի գույն */
+  background: rgba(0, 0, 0, 0.5); /* ֆոն */
+  padding: 10px;
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background: rgba(0, 0, 0, 0.8);
+  transform: scale(1.1);
+}
+
+.swiper-navigation-icon {
+  color : gold;
+}
+
+.a {
+  padding: 10px;
+  background-color: whitesmoke;
 }
