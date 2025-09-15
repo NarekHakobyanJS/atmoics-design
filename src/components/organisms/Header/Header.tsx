@@ -1,9 +1,16 @@
 import React from 'react'
 import './Header.css'
+import Nav from '../../molecules/Nav/Nav'
 
 const Header = () => {
   return (
-    <div>Header</div>
+    <header>
+      <h2>online shop</h2>  
+
+     <Nav />
+
+     
+    </header>
   )
 }
 
