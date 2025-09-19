@@ -3,12 +3,13 @@ import './Button.css'
 
 type ButtonPropsType = {
     children : React.ReactNode
-    style : string
+    style : string,
+    onClick? : () => void
 }
 
-const Button = ({children, style} : ButtonPropsType) => {
+const Button = ({children, style, onClick} : ButtonPropsType) => {
   return (
-    <button className={style}>{children}</button>
+    <button onClick={onClick} className={style}>{children}</button>
   )
 }
 

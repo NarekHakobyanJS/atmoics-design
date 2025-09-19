@@ -2,20 +2,33 @@ import React from 'react'
 import './Products.css'
 import ProductsCard from '../../organisms/ProductsCard/ProductsCard'
 import type { IPorduct } from '../../../shared/types'
+import Modal from '../../organisms/Modal/Modal'
+import { createPortal } from 'react-dom'
+
+const portal: any = document.getElementById('portal')
+
 
 type ProductsPropsType = {
   products : IPorduct[]
+  addToCart : (item : IPorduct) => void
+  open : boolean
 }
-const Products = ({products} : ProductsPropsType) => {
-  return (
-    <div>
+const Products = ({products, addToCart, open} : ProductsPropsType) => {
 
-      <div className="products-items">
+  createPortal(<Modal />, portal)
+
+  return (
+  <>
         {
-          products.map((product) => <ProductsCard key={product.id} product={product}/> )
+
+          open
+          ?
+          createPortal(<Modal />, portal)
+          :
+         ""
         }
-      </div>
-    </div>
+        { products.map((product) => <ProductsCard addToCart={addToCart} key={product.id} product={product}/> )}
+  </>
   )
 }
 

@@ -15,7 +15,9 @@ const Nav = () => {
         </li>
       </ul>
       <Button style={'go-cart-btn'}>
-        Cart
+        <NavLink to={'/cart'}>
+          Cart
+        </NavLink>
       </Button>
     </nav>
   )
