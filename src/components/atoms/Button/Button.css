@@ -4,6 +4,7 @@
     border-radius: 26px;
     background-color: black;
     color : white;
+    cursor: pointer;
 }
 
 .go-cart-btn-one{
@@ -12,4 +13,5 @@
     border-radius: 26px;
     background-color: blue;
     color : white;
+    cursor: pointer;
 }
